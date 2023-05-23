@@ -1,0 +1,65 @@
+{
+  "private": true,
+  "name": "@tokens-studio/react-tokens-poc",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production next build",
+    "clean": "next --help",
+    "dev": "next dev",
+    "build:tokens": "node build-tokens.cjs",
+    "format": "run-p format:*",
+    "format:eslint": "eslint --ext .tsx,.ts,.js,.html --fix .",
+    "format:prettier": "prettier \"**/*.{tsx,ts,js,md,json}\" --write",
+    "lint": "next lint --no-cache",
+    "lint:eslint": "eslint --ext .tsx,.ts,.js,.html .",
+    "start": "npx serve@latest out"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.6.1",
+    "@chakra-ui/react-context": "^2.0.8",
+    "@chakra-ui/react-use-merge-refs": "^2.0.6",
+    "@chakra-ui/shared-utils": "^2.0.4",
+    "@chakra-ui/spinner": "^2.0.12",
+    "@chakra-ui/system": "^2.5.7",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@stitches/react": "^1.2.8",
+    "@tokens-studio/sd-transforms": "^0.9.1",
+    "@tokens-studio/ui": "^0.2.0",
+    "framer-motion": "^10.12.12",
+    "helmet": "^7.0.0",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-no-ssr": "^1.1.0",
+    "react-shadow": "^20.0.0",
+    "style-dictionary": "^3.8.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.10",
+    "@types/next": "^9.0.0",
+    "@types/node": "^18.11.17",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^18.0.26",
+    "@types/react-redux": "^7.1.25",
+    "concurrently": "^8.0.1",
+    "critters": "^0.0.16",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.41.0",
+    "eslint-config-next": "^13.0.7",
+    "npm-run-all": "^4.1.5",
+    "start-server-and-test": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=16.8.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 1 version",
+    "not dead"
+  ],
+  "prettier": {
+    "singleQuote": true
+  }
+}

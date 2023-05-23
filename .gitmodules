@@ -1,0 +1,3 @@
+[submodule "packages/second-screen"]
+	path = packages/second-screen
+	url = git@github.com:tokens-studio/second-screen.git
